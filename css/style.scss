@@ -1,0 +1,44 @@
+/*Default font*/
+$fontFamaly: "OpenSans";
+
+$minWidth: 320px;
+$maxWidth: 1400;
+$maxWidthContainer: 1104;
+
+/*Colors*/
+$grey1: #EEE;
+$grey2: #E5E5E5;
+$grey3: #9E9E9E;
+$grey4: #828282;
+$dark1: #404040;
+$dark2: #4B4B4B;
+$dark3: #343434;;
+$blue1: #D9E8FF;
+$blue2: #6BA6FF;
+$blue3: #099CE8;
+$violet: #7553FF;
+$yellow1: #FED74B;
+$yellow2: #FFD83C;
+$yellow3: #FFD83B;
+$yellow4: #CBA500;
+
+@import "basic";
+
+body{
+    font-family: $fontFamaly, sans-serif;
+    @include adaptiv-font(18, 14, 1);
+    color: $dark2;
+}
+img{
+    display: inline-block;
+}
+
+.container{
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+.rub::after{
+    content: " ₽";
+}

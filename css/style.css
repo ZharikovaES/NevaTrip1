@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*Default font*/
+/*Colors*/
+/*Max-width of screen*/
+@font-face {
+  font-family: "OpenSans";
+  font-display: block;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  font-display: block;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+img {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.checkbox input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.checkbox input[type=checkbox] + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #dadada;
+}
+.checkbox input[type=checkbox]:checked + span::before {
+  border: 2px solid #009aaf;
+}
+.checkbox input[type=checkbox]:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: #53b5de;
+  width: 9px;
+  height: 9px;
+}
+.checkbox span {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+}
+
+.spoller {
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+.select select {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+.select select:focus {
+  outline: none;
+}
+.select select option {
+  color: #000000;
+}
+.tab-block {
+  display: none;
+}
+.tab-block--active {
+  display: block;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  color: #4B4B4B;
+}
+@media (max-width: 1104px) {
+  body {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 784));
+  }
+}
+
+img {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1104;
+  margin: 0 auto;
+  padding: 0 17px;
+}
+
+.rub::after {
+  content: " ₽";
+}/*# sourceMappingURL=style.css.map */
