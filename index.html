@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Главная</title>
 </head>
-<body>
+<body class="preload">
     <main class="excursions">
         <div class="container">
             <ul class="excursions__list">
                 <li class="excursions__list-item">
                     <article class="item-excursion">
                         <div class="item-excursion__img">
-                            <div class="item-excursion__label">новинка</div>
+                            <div class="item-excursion__label label--yellow">новинка</div>
                             <picture>
                                 <source srcset="images/photo/1.webp" type="image/webp">
                                 <img src="images/photo/1.jpg" alt="Фото вида">
                             </picture>
                         </div>
                         <div class="item-excursion__content content-excursion">
-                            <span class="content-excursion__duration">2 часа</span>
-                            <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h4>
+                            <div class="content-excursion__info">
+                                <span class="content-excursion__duration">2 часа</span>
+                                <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h4>
+                            </div>
                             <ul class="content-excursion__advantages advantages-excursion__list">
                                 <li class="advantages-excursion__list-item">Билет на целый день</li>
                                 <li class="advantages-excursion__list-item">Неограниченное число катаний</li>
                                 <li class="advantages-excursion__list-item">6 остановок у главных достопримечательностей</li>
-                                <li class="advantages-excursion__list-item">
-                                    Ближайший рейс сегодня
+                                <li class="advantages-excursion__list-item advantages-excursion__list-item--schedule">
+                                    <span>
+                                        Ближайший рейс сегодня
+                                    </span>
                                     <ul class="excursion-time__list">
                                         <li class="excursion-time__list-item">
                                             <a href="#" class="excursion-time__link">12:00</a>
@@ -53,26 +57,28 @@
                         </div>
                     </article>
                 </li>
-            </ul>
-            <ul class="excursions__list">
                 <li class="excursions__list-item">
                     <article class="item-excursion">
                         <div class="item-excursion__img">
-                            <div class="item-excursion__label">новинка</div>
+                            <div class="item-excursion__label label--violet">новинка</div>
                             <picture>
                                 <source srcset="images/photo/2.webp" type="image/webp">
                                 <img src="images/photo/2.jpg" alt="Фото вида">
                             </picture>
                         </div>
                         <div class="item-excursion__content content-excursion">
-                            <span class="content-excursion__duration">2 часа</span>
-                            <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h4>
+                            <div class="content-excursion__info">
+                                <span class="content-excursion__duration">2 часа</span>
+                                <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2019</h4>
+                            </div>
                             <ul class="content-excursion__advantages advantages-excursion__list">
                                 <li class="advantages-excursion__list-item">Билет на целый день</li>
                                 <li class="advantages-excursion__list-item">Неограниченное число катаний</li>
                                 <li class="advantages-excursion__list-item">6 остановок у главных достопримечательностей</li>
-                                <li class="advantages-excursion__list-item">
-                                    Ближайший рейс сегодня
+                                <li class="advantages-excursion__list-item advantages-excursion__list-item--schedule">
+                                    <span>
+                                        Ближайший рейс сегодня
+                                    </span>
                                     <ul class="excursion-time__list">
                                         <li class="excursion-time__list-item">
                                             <a href="#" class="excursion-time__link">12:00</a>
@@ -81,7 +87,31 @@
                                             <a href="#" class="excursion-time__link">12:00</a>
                                         </li>
                                         <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">10:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
                                             <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">10:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">12:00</a>
+                                        </li>
+                                        <li class="excursion-time__list-item">
+                                            <a href="#" class="excursion-time__link">10:00</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -89,33 +119,34 @@
                             <div class="content-excursion__bottom bottom-excursion">
                                 <div class="bottom-excursion__price">
                                     <span class="bottom-excursion__price-basic rub">900</span>
-                                    <div class="bottom-excursion__price-pier"><span class="rub">1200</span> на причале</div>
                                 </div>
                                 <a href="#" class="bottom-excursion__link btn">Подробнее</a>
                             </div>
                         </div>
                     </article>
                 </li>
-            </ul>
-            <ul class="excursions__list">
                 <li class="excursions__list-item">
                     <article class="item-excursion">
                         <div class="item-excursion__img">
-                            <div class="item-excursion__label">новинка</div>
+                            <div class="item-excursion__label label--blue">КРУГЛЫЙ ГОД</div>
                             <picture>
                                 <source srcset="images/photo/3.webp" type="image/webp">
                                 <img src="images/photo/3.jpg" alt="Фото вида">
                             </picture>
                         </div>
                         <div class="item-excursion__content content-excursion">
-                            <span class="content-excursion__duration">2 часа</span>
-                            <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h4>
+                            <div class="content-excursion__info">
+                                <span class="content-excursion__duration">2 часа</span>
+                                <h4 class="content-excursion__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</h4>
+                            </div>
                             <ul class="content-excursion__advantages advantages-excursion__list">
                                 <li class="advantages-excursion__list-item">Билет на целый день</li>
                                 <li class="advantages-excursion__list-item">Неограниченное число катаний</li>
                                 <li class="advantages-excursion__list-item">6 остановок у главных достопримечательностей</li>
-                                <li class="advantages-excursion__list-item">
-                                    Ближайший рейс сегодня
+                                <li class="advantages-excursion__list-item advantages-excursion__list-item--schedule">
+                                    <span>
+                                        Ближайший рейс сегодня
+                                    </span>
                                     <ul class="excursion-time__list">
                                         <li class="excursion-time__list-item">
                                             <a href="#" class="excursion-time__link">12:00</a>
@@ -132,9 +163,9 @@
                             <div class="content-excursion__bottom bottom-excursion">
                                 <div class="bottom-excursion__price">
                                     <span class="bottom-excursion__price-basic rub">900</span>
-                                    <div class="bottom-excursion__price-pier"><span class="rub">1200</span> на причале</div>
+                                    <div class="bottom-excursion__price-pier"><span class="rub">1200</span> на причале на причале</div>
                                 </div>
-                                <a href="#" class="bottom-excursion__link btn">Подробнее</a>
+                                <a href="#" class="bottom-excursion__link btn-1">Подробнее</a>
                             </div>
                         </div>
                     </article>
