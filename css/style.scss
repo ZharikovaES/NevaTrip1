@@ -132,6 +132,7 @@ img{
     border: 1px solid rgba($grey4, .25);
     border-radius: 16px;
     overflow: hidden;
+    height: 100%;
 
     @media screen and (min-width: 1000px) {
         display: flex;
@@ -183,7 +184,14 @@ img{
     }
 }
 .content-excursion {
-    padding: 16px clamp(12px, 1.5vw, 23px);
+    padding: 16px clamp(12px, 1.5vw, 23px) 74px;
+    position: relative;
+    height: calc(100% - max(220px, 25vh));
+
+    @media screen and (min-width: 1000px) {
+        padding: 16px clamp(12px, 1.5vw, 23px);
+        height: auto;
+    }
 
     &__info{
         display: flex;
@@ -219,6 +227,7 @@ img{
         @include adaptiv-font(26, 14, 1);
         color: $dark1;
         line-height: 1.6;
+
         @media screen and (min-width: 992px) {
             color: black;
         }    
@@ -227,7 +236,16 @@ img{
         }            
     }
     &__advantages {}
-    &__bottom {}
+    &__bottom {
+        position: absolute;
+        bottom: 16px;
+        left: clamp(12px, 1.5vw, 23px);
+        right: clamp(12px, 1.5vw, 23px);
+
+        @media screen and (min-width: 1000px) {
+            position: static;
+        }
+    }
 }
 .advantages-excursion {
     &__list {
@@ -368,7 +386,6 @@ img{
         @media screen and (min-width: 1000px) {
             margin-right: 0;
             flex: 0 1 auto;
-
         }    
     }
 }
